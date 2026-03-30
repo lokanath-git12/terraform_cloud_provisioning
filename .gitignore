@@ -1,2 +1,4 @@
 setup.sh
 terraform/accounts/175200622651.tf/.terraform/terraform.tfstate
+terraform/accounts/175200622651.tf/.terraform/providers/registry.terraform.io/hashicorp/aws/6.38.0/darwin_arm64/terraform-provider-aws_v6.38.0_x5
+terraform/accounts/175200622651.tf/.terraform/modules/modules.json
