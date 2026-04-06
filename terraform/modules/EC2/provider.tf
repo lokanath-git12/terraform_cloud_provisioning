@@ -1,3 +1,3 @@
 provider "aws" {
-  foreach = var.region
+  region = var.region
 }

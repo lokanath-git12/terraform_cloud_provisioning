@@ -1,0 +1,16 @@
+---
+- name: Install .NET on EC2
+  hosts: myhosts
+  become: yes
+
+  tasks:
+    - name: Updatate apt package chche
+      ansible.builtin.apt:
+        update_cache: yes
+
+    - name: Install .NET SDK
+      ansible.builtin.apt: 
+        name: dotnet-sdk-10.0
+        state: present
+
+    
