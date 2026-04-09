@@ -62,7 +62,3 @@ variable "security_group_name" {
   default     = ""
   description = "security group name for my ec2 instance"
 }
-
-
-
-
