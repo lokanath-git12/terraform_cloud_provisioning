@@ -39,3 +39,26 @@ variable "ami_id" {
   description = "AMI ID for my ec2 instance"
 }
 
+variable "public_key" {
+  type        = string
+  default     = ""
+  description = "public key for my ec2 instance"
+}
+
+variable "key_name1" {
+  type        = string
+  default     = ""
+  description = "private key for my ec2 instance"
+}
+
+variable "key_name_prefix1" {
+  type        = string
+  default     = ""
+  description = "description for my ec2 instance keypair prefix"
+}
+
+variable "security_group_name" {
+  type        = string
+  default     = ""
+  description = "security group name for my ec2 instance"
+}

@@ -9,3 +9,7 @@ output "image_id" {
 output  "image_data" {
     value = data.aws_ami.terraform_ami
 }
+
+output  "security_group_data" {
+    value = data.aws_security_group.ec2_firewall
+}
