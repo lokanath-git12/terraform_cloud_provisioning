@@ -12,4 +12,4 @@
       ansible.builtin.apt: 
         name: dotnet-sdk-10.0
         state: present
-        
+ 
