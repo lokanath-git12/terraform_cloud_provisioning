@@ -16,3 +16,6 @@ jobs:
 
       - name: Show current date
         run: date
+
+      - name: Show repository
+        run: echo "Repository: ${{ github.repository }}"
