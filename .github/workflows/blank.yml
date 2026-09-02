@@ -11,7 +11,7 @@ jobs:
 
     strategy:
       matrix:
-        deployment:
+        include:
           - environment: ${{vars.test}}
             region: ap-south-1
             replicas: 1
@@ -30,12 +30,12 @@ jobs:
 
       - name: Show deployment configuration
         run: |
-          echo "Environment: ${{ matrix.deployment.environment }}"
-          echo "Region: ${{ matrix.deployment.region }}"
-          echo "Replicas: ${{ matrix.deployment.replicas }}"
+          echo "Environment: ${{ matrix.environment }}"
+          echo "Region: ${{ matrix.region }}"
+          echo "Replicas: ${{ matrix.replicas }}"
 
       - name: Deploy
         run: |
-          echo "Deploying to ${{ matrix.deployment.environment }}"
-          echo "Region: ${{ matrix.deployment.region }}"
-          echo "Replicas: ${{ matrix.deployment.replicas }}"
+          echo "Deploying to ${{ matrix.environment }}"
+          echo "Region: ${{ matrix.region }}"
+          echo "Replicas: ${{ matrix.replicas }}"
