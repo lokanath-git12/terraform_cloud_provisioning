@@ -7,11 +7,12 @@ jobs:
   deploy:
     name: Deploy ${{ matrix.deployment.environment }} - ${{ matrix.deployment.region }}
     runs-on: ubuntu-latest
+    environment: development
 
     strategy:
       matrix:
         deployment:
-          - environment: development
+          - environment: ${{vars.test}}
             region: ap-south-1
             replicas: 1
 
